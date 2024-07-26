@@ -1,0 +1,46 @@
+
+.wrap{
+    background-color: #db0000;
+    height: 100vh;
+}
+.sec .logo{text-align: center; padding-top: 130px;}
+.sec .logo img{max-width: 150px;}
+.sec .gnb{display: flex; justify-content: center;}
+.sec .gnb ul{display: flex; flex-direction: column;  width: 270px; text-align: left; margin-top: 50px;}
+.sec .gnb ul li{margin: 10px 0;}
+.sec .gnb ul li a{color: #000; font-size: 10px; font-weight: 700;}
+
+.sub-wrap{padding-bottom: 200px;}
+.sub-wrap .shop-box{max-width: 1000px; margin: 0 auto; font-family: 'pretendard'; font-size: 13px;}
+.sub-wrap .shop-box ul {display: grid; grid-template-columns: repeat(4,1fr); gap: 40px 20px;}
+.sub-wrap .shop-box ul li img{width: 100%; border-radius: 8px;}
+.sub-wrap .shop-box ul li{color: #222;}
+.sub-wrap .shop-box ul li h5{font-weight: 600; margin-bottom: 5px; margin-top: 10px;}
+.sub-wrap .shop-box ul li h4{margin-top: 10px;}
+.sub-wrap .shop-box ul li .delivery{display:inline-flex;background-color: #F2F9F6; color: #88BA8C; margin-top:8px; padding: 5px; box-sizing: border-box;  font-size: 10px; align-items: center;}
+.sub-wrap .shop-box ul li .delivery img{max-width: 12px; margin-right: 5px;}
+.sub-wrap .shop-box ul li .dis{white-space: nowrap; text-overflow: ellipsis; overflow: hidden; width: 230px; margin-top: 5px;}
+.sub-wrap .shop-box ul li .price{font-weight: 700; margin-top: 5px; font-size: 16px;}
+.sub-wrap .shop-box ul li .buy{margin-top: 5px; font-size: 11px; color: #777;}
+.sub-wrap .banner{margin:50PX 0  50px 0;}
+.sub-wrap .shop_tit{padding: 15px 0; margin-bottom: 30px; border-bottom: 1px solid #efefef; font-family: 'pretendard';}
+.sub-wrap .shop_tit h3{font-size: 24px; font-weight: 600;}
+img{width: 100%;}
+
+.header{display: flex;  justify-content:space-between; align-items: center;font-family: 'pretendard'; padding: 40px;}
+.header .logo img{max-width: 140px;}
+.menu-list{display: flex; gap: 20px;}
+@media(max-width:1024px){
+    .menu-list{gap: 10px;}
+    .header{padding: 20px;}
+    .sub-wrap .shop-box{padding:0 20px;}
+    .sub-wrap .shop-box ul li .dis{width: 100%; max-width: 200px;}
+    .sub-wrap .shop-box ul{grid-template-columns: repeat(3,1fr);}
+}
+@media(max-width:768px){
+    .sub-wrap .shop-box ul{grid-template-columns: repeat(2,1fr);}
+    .sec .gnb ul{width: 200px;}   
+}
+@media(max-width:768px){
+    .sub-wrap .shop-box ul li .dis{display: none;}
+}
